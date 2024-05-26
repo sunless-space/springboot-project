@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SMS App - Natujenge Cohort</title>
+  <link href="styles.css" rel="stylesheet">
+  <script defer src="scripts.js"></script>
+</head>
+
+<body>
+  <h1>Calculator</h1>
+  <form>
+    <label for="firstNumber">First Number:</label><br><br>
+    <input type="text" id="n1" name="num1" placeholder="Number"><br><br>
+
+    <label for="operator">Operator:</label><br><br>
+    <input type="text" id="oper" name="operator" placeholder="+, -, *, /"><br><br>
+
+    <label for="secondNumber">Second Number:</label><br><br>
+    <input type="text" id="n2" name="num2" placeholder="Number"><br><br>
+
+    <input type="button" value="Calculate" onclick="calculate()"><br>
+    <!-- <input type="button" value="SMS Result" onclick="calculate(sendRes())"><br> -->
+  </form>
+  <p id="result"></p>
+
+  <h1>SMS App with API integration</h1>
+  <form>
+    <label for="from">From: </label><br> <br>
+    <input type="text" id="from" name="from" value="TIARACONECT"><br> <br>
+
+    <label for="to">To: </label><br> <br>
+    <input type="text" id="to" name="to" value="0757886487"><br> <br>
+
+    <label for="message">Text Message: </label><br> <br>
+    <input type="text" id="message" name="message" placeholder="Text SMS"><br> <br>
+
+    <input type="button" value="submit" onclick="sendSMS()" placeholder="Send">
+  </form> <br>
+
+</body>
+
+</html>
