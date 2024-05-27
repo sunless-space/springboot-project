@@ -18,8 +18,8 @@
 
 ## Objectives
 
-- [ ] configure neovim to be a java ide, set up directories
-- [ ] docs about springboot, maven ...
+- [X] configure neovim to be a java ide, set up directories
+- [X] docs about springboot, maven ...
 - [ ] api that takes two numbers and multiply
 - [ ] test with postman
 - [ ] implement api to the website
