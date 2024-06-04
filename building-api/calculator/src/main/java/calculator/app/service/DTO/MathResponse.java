@@ -3,7 +3,8 @@ package calculator.app.service.DTO;
 public class MathResponse {
   int number1;
   int number2;
-  int sum;
+  char operator;
+  double result;
 
   public int getNumber1() {
     return number1;
@@ -21,16 +22,33 @@ public class MathResponse {
     this.number2 = number2;
   }
 
-  public int getSum() {
-    return sum;
+  public char getOperator() {
+    return operator;
   }
 
-  public void setSum(int sum) {
-    this.sum = sum;
+  public void setOperator(char operator) {
+    this.operator = operator;
+  }
+
+  public double getResult() {
+    return result;
+  }
+
+  public void setResult(double result) {
+    this.result = result;
   }
 
   @Override
   public String toString() {
-    return "MathResponse{" + "number1=" + number1 + ", number2=" + number2 + ", sum=" + sum + "}";
+    return "MathResponse{"
+        + "number1="
+        + number1
+        + ", operator="
+        + operator
+        + ", number2="
+        + number2
+        + ", result="
+        + result
+        + "}";
   }
 }

@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class MathController {
   MathService mathService = new MathService();
 
-  @PostMapping("/add")
-  public MathResponse addition(@RequestBody MathRequestDTO mathRequestDTO) {
+  @PostMapping("/calculate")
+  public MathResponse calculation(@RequestBody MathRequestDTO mathRequestDTO) {
     System.out.println("Received DTO: " + mathRequestDTO);
     return mathService.add(mathRequestDTO);
   }

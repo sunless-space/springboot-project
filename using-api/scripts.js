@@ -1,23 +1,23 @@
 /********** Calculator with JS ***********/
 function apiCalculate() {
-  const value1 = parseInt(document.getElementById("apiN1").value);
+  const number1 = parseInt(document.getElementById("apiN1").value);
   const operator = document.getElementById("apiOper").value;
-  const value2 = parseInt(document.getElementById("apiN2").value);
+  const number2 = parseInt(document.getElementById("apiN2").value);
 
   // transform data to object in JSON format
   const apiReq = new Object();
-  apiReq.value1 = value1;
+  apiReq.number1 = number1;
   apiReq.operator = operator;
-  apiReq.value2 = value2;
+  apiReq.number2 = number2;
 
   const apiJsonString = JSON.stringify(apiReq);
 
   // checking the payload
-  console.log(jsonString);
+  console.log(apiJsonString);
 
   // sending payload to the api
   const xhttp = new XMLHttpRequest();
-  xhttp.open("POST", "http://localhost:8080");
+  xhttp.open("POST", "http://localhost:8080/api/arithmetic/calculate");
   xhttp.setRequestHeader("Content-type", "application/json");
   xhttp.send(apiJsonString);
 }
@@ -72,7 +72,7 @@ function calculate() {
     case "/":
       res = value1 / value2;
       break;
-    case "**":
+    case "^":
       res = value1 ** value2;
       break;
     /* plan b for power

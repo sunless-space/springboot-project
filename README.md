@@ -9,7 +9,7 @@
 
 ## Pain
 
-- [X] switch case for calculator (+, *, /, -, power)
+- [X] calculator (+, *, /, -, power)
 - [X] drop down menus
 - [ ] 'message sent' and error handling feedback
 - [ ] api implementation: familiar edition (nodejs)
@@ -20,8 +20,9 @@
 
 - [X] configure neovim to be a java ide, set up directories
 - [X] docs about springboot, maven ...
-- [ ] calculator
+- [X] calculator (+, *, /, -, power)
 - [X] test with postman
+- [ ] work in website (error: cors policy)
 
 ## Pain
 
