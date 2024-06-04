@@ -1,7 +1,11 @@
-label {
-  margin-top: 1rem;
+.fold {
+  display: none;
 }
 
-#ad {
-  margin-top: 1rem;
+button {
+  border: 0;
+  background: none;
+  height: 2rem;
+  font-size: 1.5rem;
+  padding-left: 0;
 }
