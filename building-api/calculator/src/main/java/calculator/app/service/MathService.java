@@ -1,6 +1,5 @@
 package calculator.app.service;
 
-// import calculator.app.service.DTO.MathRequestDTO;
 import calculator.app.service.DTO.*;
 import org.springframework.stereotype.Service;
 
@@ -11,8 +10,8 @@ public class MathService {
   public MathResponse add(MathRequestDTO mathRequestDTO) {
     // get numbers from Data Transfer Object
     int number1 = mathRequestDTO.getNumber1();
-    int number2 = mathRequestDTO.getNumber2();
     char operator = mathRequestDTO.getOperator();
+    int number2 = mathRequestDTO.getNumber2();
 
     // calculate result
     switch (operator) {
