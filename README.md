@@ -22,7 +22,7 @@
 - [X] docs about springboot, maven ...
 - [X] calculator (+, *, /, -, power)
 - [X] test with postman
-- [ ] work in website (error: cors policy)
+- [X] work in website (error: cors policy)
 
 ## Pain
 
