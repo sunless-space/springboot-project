@@ -19,6 +19,7 @@ function apiCalculate() {
   const xhttp = new XMLHttpRequest();
   xhttp.open("POST", "http://localhost:8080/api/arithmetic/calculate");
   xhttp.setRequestHeader("Content-type", "application/json");
+  //xhttp.setRequestHeader("Access-Control-Allow-Headers", "*");
   xhttp.send(apiJsonString);
 }
 
